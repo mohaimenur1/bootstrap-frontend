@@ -1,0 +1,13 @@
+/** @format */
+
+.header-text {
+  padding-top: 60px;
+}
+
+/* @media (max-width: 666px) {
+  html,
+  body {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+} */
