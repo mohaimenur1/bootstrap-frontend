@@ -35,7 +35,7 @@
   <body>
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark mb-5 fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Frontend Bootcamp</a>
         <button
@@ -61,22 +61,22 @@
 
     <!-- Banner Section -->
 
-    <section class="bg-dark text-light">
+    <section class="bg-dark text-light banner">
       <div class="container">
         <div class="row">
           <div
-            class="col-lg-6 header-text text-lg-start text-md-center text-sm-center"
+            class="col-lg-6 header-text text-lg-start text-md-center text-sm-center mt-4"
           >
             <h1>Become a <span class="text-warning">Web Developer</span></h1>
             <p class="lead my-4">
               We focus on teaching our students the fundamentals of the latest
               and greatest technologies to prepare them for their first dev role
             </p>
-            <button class="btn btn-primary bg-primary">
+            <button id="" class="btn enroll-btn text-light">
               Start The Enrollment
             </button>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 mt-4">
             <img class="img-fluid w-100 p-4" src="img/showcase.svg" alt="" />
           </div>
         </div>
@@ -117,7 +117,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 p-3">
-            <div class="card-body bg-dark rounded-1 text-light text-center p-4">
+            <div
+              class="card-body shadow bg-dark rounded-1 text-light text-center p-4"
+            >
               <i class="fa fa-laptop fa-2x"></i>
               <h5 class="card-title">Virtual</h5>
               <p class="card-text">
@@ -130,7 +132,7 @@
           </div>
           <div class="col-lg-4 col-md-6 p-3">
             <div
-              class="card-body bg-secondary rounded-1 text-light text-center p-4"
+              class="card-body shadow bg-secondary rounded-1 text-light text-center p-4"
             >
               <i class="fa fa-share-square-o fa-2x"></i>
               <h5 class="card-title">Virtual</h5>
@@ -143,7 +145,9 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 p-3">
-            <div class="card-body bg-dark rounded-1 text-light text-center p-4">
+            <div
+              class="card-body shadow bg-dark rounded-1 text-light text-center p-4"
+            >
               <i class="fa fa-user fa-2x"></i>
               <h5 class="card-title">Virtual</h5>
               <p class="card-text">
@@ -167,7 +171,7 @@
             <img class="image-fluid w-100" src="img/fundamentals.svg" alt="" />
           </div>
           <div class="col-lg-6">
-            <div class="pt-5 ps-5">
+            <div class="pt-5 ps-5 mb-3">
               <h3>Learn The Fundamentals</h3>
               <h4>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
@@ -179,7 +183,7 @@
                 cum ab illo officiis molestiae omnis optio labore deleniti fugit
                 aspernatur?
               </p>
-              <button class="btn btn-outline-light text-dark">
+              <button class="btn text-light btn-fundamental">
                 <i class="fa fa-sort"></i> Read More
               </button>
             </div>
@@ -194,8 +198,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <div class="pt-5 ps-5">
-              <h3>Learn React</h3>
+            <div class="pt-5">
+              <h3>Learn <span class="text-primary">React</span></h3>
               <h4>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
                 recusandae ipsa sequi alias dolor natus tempora nam harum
@@ -206,7 +210,7 @@
                 cum ab illo officiis molestiae omnis optio labore deleniti fugit
                 aspernatur?
               </p>
-              <button class="btn btn-outline-light text-light">
+              <button class="btn btn-primary text-light">
                 <i class="fa fa-sort"></i> Read More
               </button>
             </div>
@@ -217,6 +221,92 @@
         </div>
       </div>
     </section>
+
+    <!-- Carousel Section -->
+
+    <div
+      id="carouselExampleControls"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner container mt-5 shadow">
+        <div class="carousel-item active p-5">
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-center">
+              <div>
+                <h1>Firebase</h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <h3>$320</h3>
+                <button class="btn btn-primary">Enroll</button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="img/firebase.png" class="w-100" alt="..." />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item p-5">
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-center">
+              <div>
+                <h1>MongoDB</h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <h3>$320</h3>
+                <button class="btn btn-primary">Enroll</button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="img/mongodb.png" class="w-100" alt="..." />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item p-5">
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-center">
+              <div>
+                <h1>Nodejs</h1>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <h3>$320</h3>
+                <button class="btn btn-primary">Enroll</button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="img/nodejs.png" class="w-100" alt="..." />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <!-- Frequently Ask Question -->
 

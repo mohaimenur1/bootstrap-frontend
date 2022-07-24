@@ -1,8 +1,40 @@
 /** @format */
 
+#nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+}
+
 .header-text {
   padding-top: 60px;
 }
+
+/* All Button  */
+
+.enroll-btn {
+  background-color: orange;
+}
+
+.btn-fundamental {
+  background-color: #e44d26;
+}
+
+.banner {
+  background: url('img/main.jpeg') bottom center / cover no-repeat;
+  width: 100vw;
+}
+
+/* @media screen and (max-width: 768px) {
+  .banner {
+    background: url('img/main.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+  }
+} */
 
 /* @media (max-width: 666px) {
   html,
